@@ -5,18 +5,19 @@ namespace Ship
 {
     public class Gun : MonoBehaviour
     {
-        [SerializeField] private Laser _laserPrefab;
+        [SerializeField] private Laser _bulletPrefab;
+        [SerializeField] private KeyCode _keybind = KeyCode.Space;
 
         private void Update()
         {
-            if (Input.GetKeyDown(KeyCode.Space))
+            if (Input.GetKeyDown(_keybind))
                 Shoot();
         }
         
         private void Shoot()
         {
             var trans = transform;
-            Instantiate(_laserPrefab, trans.position, trans.rotation);
+            Instantiate(_bulletPrefab, trans.position, trans.rotation);
         }
     }
 }
