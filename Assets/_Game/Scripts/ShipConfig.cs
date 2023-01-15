@@ -1,13 +1,17 @@
-﻿using UnityEngine;
-using Variables;
+﻿using System;
+using UnityEngine;
 
 namespace DefaultNamespace
 {
+    [Serializable]
     [CreateAssetMenu(fileName = "Ship Config", menuName = "ScriptableObjects/ShipConfig", order = 0)]
     public class ShipConfig : ScriptableObject
     {
-        [SerializeField] private FloatVariable _trottle;
-        [SerializeField] private FloatVariable _rotation;
+        [SerializeField] private float _throttle;
+        [SerializeField] private float _rotation;
+
+        public float ThrottlePower => _throttle;
+        public float RotationPower => _rotation;
     }
     
 }
