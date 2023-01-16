@@ -1,11 +1,11 @@
 using System;
-using DefaultNamespace;
 using UnityEngine;
 using UnityEngine.UIElements;
 
-[RequireComponent(typeof(UIDocument))]
-[Serializable]
-public class GameManager : MonoBehaviour
+namespace DefaultNamespace
 {
-    [SerializeField] private ShipConfig _shipConfig;
+    [RequireComponent(typeof(UIDocument))]
+    public class GameManager : MonoBehaviour
+    {
+    }
 }

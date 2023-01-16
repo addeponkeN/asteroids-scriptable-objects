@@ -3,7 +3,6 @@ using UnityEngine;
 
 namespace DefaultNamespace
 {
-    [Serializable]
     [CreateAssetMenu(fileName = "Ship Config", menuName = "ScriptableObjects/ShipConfig", order = 0)]
     public class ShipConfig : ScriptableObject
     {

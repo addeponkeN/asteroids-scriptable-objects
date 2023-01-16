@@ -2,7 +2,6 @@
 
 #if UNITY_EDITOR
 using UnityEditor;
-using UnityEditor.UIElements;
 
 namespace DefaultNamespace
 {
@@ -17,7 +16,7 @@ namespace DefaultNamespace
             
             uxml.CloneTree(root);
             
-            InspectorElement.FillDefaultInspector(root, serializedObject, this);
+            // InspectorElement.FillDefaultInspector(root, serializedObject, this);
             
             return root;
         }
