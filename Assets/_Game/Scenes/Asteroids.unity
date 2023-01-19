@@ -323,7 +323,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _asteroidConfig: {fileID: 11400000, guid: 53a517d5fc5170e4a8cdadaea49335e4, type: 2}
-  _shipConfig: {fileID: 11400000, guid: 1395aa98700805a4cae96639cff58c73, type: 2}
+  _shipConfig: {fileID: 11400000, guid: c2ab4e78b13563645b11dc0d840817e3, type: 2}
 --- !u!1001 &2970632032457142644
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -387,7 +387,7 @@ PrefabInstance:
     - target: {fileID: 2970632031999273638, guid: ab39a3d0044af1d46b46c0ccbc24f3dd, type: 3}
       propertyPath: _shipConfig
       value: 
-      objectReference: {fileID: 11400000, guid: 1395aa98700805a4cae96639cff58c73, type: 2}
+      objectReference: {fileID: 11400000, guid: c2ab4e78b13563645b11dc0d840817e3, type: 2}
     - target: {fileID: 2970632031999273638, guid: ab39a3d0044af1d46b46c0ccbc24f3dd, type: 3}
       propertyPath: _rotationPowerSimple
       value: 5.85

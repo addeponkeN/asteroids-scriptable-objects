@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d965cc6684a2486e9ed6a26a8f625ee9, type: 3}
-  m_Name: Ship Config
+  m_Name: ShipConfig
   m_EditorClassIdentifier: 
   _throttle: 20
   _rotation: 3

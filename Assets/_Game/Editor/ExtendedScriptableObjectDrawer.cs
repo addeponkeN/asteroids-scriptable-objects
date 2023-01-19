@@ -161,29 +161,17 @@ namespace _Game.Editor
         {
             Rect position = EditorGUILayout.BeginVertical();
 
-            var propertyRect = Rect.zero;
             var guiContent = label;
             var foldoutRect = new Rect(position.x, position.y, EditorGUIUtility.labelWidth,
                 EditorGUIUtility.singleLineHeight);
             if(objectReferenceValue != null)
             {
                 isExpanded = EditorGUI.Foldout(foldoutRect, isExpanded, guiContent, true);
-
-                var indentedPosition = EditorGUI.IndentedRect(position);
-                var indentOffset = indentedPosition.x - position.x;
-                propertyRect = new Rect(position.x + EditorGUIUtility.labelWidth - indentOffset, position.y,
-                    position.width - EditorGUIUtility.labelWidth - indentOffset, EditorGUIUtility.singleLineHeight);
             }
             else
             {
                 foldoutRect.x += 12;
                 EditorGUI.Foldout(foldoutRect, isExpanded, guiContent, true, EditorStyles.label);
-
-                var indentedPosition = EditorGUI.IndentedRect(position);
-                var indentOffset = indentedPosition.x - position.x;
-                propertyRect = new Rect(position.x + EditorGUIUtility.labelWidth - indentOffset, position.y,
-                    position.width - EditorGUIUtility.labelWidth - indentOffset - 60,
-                    EditorGUIUtility.singleLineHeight);
             }
 
             EditorGUILayout.BeginHorizontal();
@@ -245,29 +233,17 @@ namespace _Game.Editor
         {
             Rect position = EditorGUILayout.BeginVertical();
 
-            var propertyRect = Rect.zero;
             var guiContent = label;
             var foldoutRect = new Rect(position.x, position.y, EditorGUIUtility.labelWidth,
                 EditorGUIUtility.singleLineHeight);
             if(objectReferenceValue != null)
             {
                 isExpanded = EditorGUI.Foldout(foldoutRect, isExpanded, guiContent, true);
-
-                var indentedPosition = EditorGUI.IndentedRect(position);
-                var indentOffset = indentedPosition.x - position.x;
-                propertyRect = new Rect(position.x + EditorGUIUtility.labelWidth - indentOffset, position.y,
-                    position.width - EditorGUIUtility.labelWidth - indentOffset, EditorGUIUtility.singleLineHeight);
             }
             else
             {
                 foldoutRect.x += 12;
                 EditorGUI.Foldout(foldoutRect, isExpanded, guiContent, true, EditorStyles.label);
-
-                var indentedPosition = EditorGUI.IndentedRect(position);
-                var indentOffset = indentedPosition.x - position.x;
-                propertyRect = new Rect(position.x + EditorGUIUtility.labelWidth - indentOffset, position.y,
-                    position.width - EditorGUIUtility.labelWidth - indentOffset - 60,
-                    EditorGUIUtility.singleLineHeight);
             }
 
             EditorGUILayout.BeginHorizontal();
@@ -277,9 +253,6 @@ namespace _Game.Editor
             if(objectReferenceValue != null)
             {
                 EditorGUILayout.EndHorizontal();
-                if(isExpanded)
-                {
-                }
             }
             else
             {
