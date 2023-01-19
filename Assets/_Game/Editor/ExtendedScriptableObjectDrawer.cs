@@ -1,10 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
-using UnityEditor;
 using UnityEngine;
+
+#if UNITY_EDITOR
+
+using UnityEditor;
 
 namespace _Game.Editor
 {
+    /// <summary>
+    /// This overrides the current ScriptableObject drawer.
+    /// Creates a foldout on all ScriptableObjects containing its serializable fields in the inspector.
+    /// </summary>
     [CustomPropertyDrawer(typeof(ScriptableObject), true)]
     public class ExtendedScriptableObjectDrawer : PropertyDrawer
     {
@@ -312,3 +319,5 @@ namespace _Game.Editor
         }
     }
 }
+
+#endif

@@ -5,14 +5,17 @@ using UnityEditor;
 
 namespace DefaultNamespace
 {
+    /// <summary>
+    /// Ended up not using this...
+    /// </summary>
     public class GameManagerEditor : Editor
     {
-        public VisualTreeAsset uxml;
+        public VisualTreeAsset UXML;
 
         public override VisualElement CreateInspectorGUI()
         {
             var root = new VisualElement();
-            uxml.CloneTree(root);
+            UXML.CloneTree(root);
             return root;
         }
     }

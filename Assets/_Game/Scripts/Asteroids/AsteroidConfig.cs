@@ -2,6 +2,9 @@ using UnityEngine;
 
 namespace Asteroids
 {
+    /// <summary>
+    /// A config containing asteroid spawn values
+    /// </summary>
     [CreateAssetMenu(fileName = "Asteroid Config", menuName = "ScriptableObjects/AsteroidConfig", order = 0)]
     public class AsteroidConfig : ScriptableObject
     {
