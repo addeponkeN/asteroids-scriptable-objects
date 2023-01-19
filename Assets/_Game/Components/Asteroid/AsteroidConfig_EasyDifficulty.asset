@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: AsteroidConfig_EasyDifficulty
   m_EditorClassIdentifier: 
   _minSpawnTime: 2
-  _maxSpawnTime: 3
-  _minAmount: 1
+  _maxSpawnTime: 4
+  _minAmount: 2
   _maxAmount: 3

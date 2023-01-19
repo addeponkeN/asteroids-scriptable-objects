@@ -5,7 +5,7 @@ using UnityEditor;
 
 namespace DefaultNamespace
 {
-    [CustomEditor(typeof(GameManager))]
+    // [CustomEditor(typeof(GameManager))]
     public class GameManagerEditor : Editor
     {
         public VisualTreeAsset uxml;

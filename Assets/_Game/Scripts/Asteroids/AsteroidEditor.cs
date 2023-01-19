@@ -5,7 +5,7 @@ using UnityEngine.UIElements;
 
 namespace Asteroids
 {
-    [CustomEditor(typeof(GameManager))]
+    // [CustomEditor(typeof(GameManager))]
     public class AsteroidEditor : Editor
     {
         public VisualTreeAsset UXML;

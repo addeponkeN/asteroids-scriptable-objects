@@ -245,7 +245,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _asteroidPrefab: {fileID: 1784223117350305363, guid: 01106835b2bc0e347a3bb06b7544b51a, type: 3}
-  _config: {fileID: 11400000, guid: 715c404ca76b2ec41be2d65fe5622eac, type: 2}
+  _asteroidConfig: {fileID: 11400000, guid: 53a517d5fc5170e4a8cdadaea49335e4, type: 2}
 --- !u!4 &1867257717
 Transform:
   m_ObjectHideFlags: 0
@@ -322,6 +322,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74f1f2b484f597b4c96dba2dcd309fab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _asteroidConfig: {fileID: 11400000, guid: 53a517d5fc5170e4a8cdadaea49335e4, type: 2}
+  _shipConfig: {fileID: 11400000, guid: 1395aa98700805a4cae96639cff58c73, type: 2}
 --- !u!1001 &2970632032457142644
 PrefabInstance:
   m_ObjectHideFlags: 0
