@@ -9,7 +9,7 @@ namespace Asteroids
         [SerializeField] private Asteroid _asteroidPrefab;
         [SerializeField] private AsteroidConfig _asteroidConfig;
         
-        //  These have been put into a ScriptableObject (AsteroidConfig)
+        //  These fields have been moved into a ScriptableObject (AsteroidConfig)
         // [SerializeField] private float _minSpawnTime;
         // [SerializeField] private float _maxSpawnTime;
         // [SerializeField] private int _minAmount;
